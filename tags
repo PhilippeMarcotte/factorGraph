@@ -5,3 +5,15 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 explainigAway.py	Question 1/explainigAway.py	1;"	kind:file	line:1
+np	Question 1/explainigAway.py	/^import numpy as np$/;"	kind:namespace	line:1
+rain	Question 1/explainigAway.py	/^rain = 0.45$/;"	kind:variable	line:5
+rainFalse_wetGrassTrue_sprinklerFalse	Question 1/explainigAway.py	/^rainFalse_wetGrassTrue_sprinklerFalse = sprinkler * rain * wetGrass[1][1]$/;"	kind:variable	line:16
+rainFalse_wetGrassTrue_sprinklerTrue	Question 1/explainigAway.py	/^rainFalse_wetGrassTrue_sprinklerTrue = sprinkler * rain * wetGrass[1][0]$/;"	kind:variable	line:14
+rainTrue_knowing_wetGrassTrue	Question 1/explainigAway.py	/^rainTrue_knowing_wetGrassTrue = rainTrue_wetGrassTrue \/ wetGrassTrue$/;"	kind:variable	line:22
+rainTrue_knowing_wetGrassTrue_sprinklerTrue	Question 1/explainigAway.py	/^rainTrue_knowing_wetGrassTrue_sprinklerTrue = rainFalse_wetGrassTrue_sprinklerTrue \/ $/;"	kind:variable	line:26
+rainTrue_wetGrassTrue	Question 1/explainigAway.py	/^rainTrue_wetGrassTrue = rainTrue_wetGrassTrue_sprinklerTrue + rainTrue_wetGrassTrue_sprinklerFalse$/;"	kind:variable	line:18
+rainTrue_wetGrassTrue_sprinklerFalse	Question 1/explainigAway.py	/^rainTrue_wetGrassTrue_sprinklerFalse = sprinkler * rain * wetGrass[0][1]$/;"	kind:variable	line:12
+rainTrue_wetGrassTrue_sprinklerTrue	Question 1/explainigAway.py	/^rainTrue_wetGrassTrue_sprinklerTrue = sprinkler * rain * wetGrass[0][0]$/;"	kind:variable	line:10
+sprinkler	Question 1/explainigAway.py	/^sprinkler = 0.3$/;"	kind:variable	line:3
+wetGrass	Question 1/explainigAway.py	/^wetGrass = np.array([[0.98, 0.80],$/;"	kind:variable	line:7
+wetGrassTrue	Question 1/explainigAway.py	/^wetGrassTrue = rainTrue_wetGrassTrue_sprinklerTrue + rainTrue_wetGrassTrue_sprinklerFalse + rainFalse_wetGrassTrue_sprinklerTrue + rainFalse_wetGrassTrue_sprinklerFalse$/;"	kind:variable	line:20
