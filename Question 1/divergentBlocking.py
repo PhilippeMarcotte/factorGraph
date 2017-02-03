@@ -34,12 +34,13 @@ sprinklerTrue = cloudyTrue * sprinkler[0] + (1 - cloudyTrue) * sprinkler[1]
 
 rainTrue_knowing_sprinklerTrue = rainTrue_sprinklerTrue / sprinklerTrue
 
-print "Probabilite qu'il pleut sachant que l'arrosoir est active"
-print rainTrue_knowing_sprinklerTrue
+print("DIVERGENT BLOCKING")
+print("Probabilite qu'il pleut sachant que l'arrosoir est active")
+print(rainTrue_knowing_sprinklerTrue)
 
-print 'Si on ne sait rien sur les nuages, savoir si l''arrosoir est active donne de l''information sur s''il pleut.\n'
+print("Si on ne sait rien sur les nuages, savoir si l'arrosoir est active donne de l'information sur s'il pleut.\n")
 
-print "Probabilite qu'il pleut sachant qu'il y a des nuages = Probabilite qu'il pleut sachant qu'il y a des nuages et que l'arrosoir est active"
-print "                             	                 {0} = {1}".format(rainTrue_knowing_cloudyTrue, rainTrue_knowing_cloudyTrue_sprinklerTrue)
+print("Probabilite qu'il pleut sachant qu'il y a des nuages = Probabilite qu'il pleut sachant qu'il y a des nuages et que l'arrosoir est active")
+print("                             	                 {0} = {1}".format(rainTrue_knowing_cloudyTrue, rainTrue_knowing_cloudyTrue_sprinklerTrue))
 
-print "Si l'on sait deja qu'il y a des nuages, savoir que l'arrosoir est active ne dit rien de plus sur s'il pleut."
+print("Si l'on sait deja qu'il y a des nuages, savoir que l'arrosoir est active ne dit rien de plus sur s'il pleut.\n")

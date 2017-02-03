@@ -29,5 +29,6 @@ wetGrassTrue_sprinklerTrue = rainTrue_wetGrassTrue_sprinklerTrue + rainFalse_wet
 
 rainTrue_knowing_wetGrassTrue_sprinklerTrue = rainFalse_wetGrassTrue_sprinklerTrue / wetGrassTrue_sprinklerTrue
 
-print "Probabilite de pluie sachant que le gazon est mouille > Probabilite de pluie sachant que le gazon est mouille et que le sprinkler a ete active"
-print "                                       {0} > {1}".format(rainTrue_knowing_wetGrassTrue, rainTrue_knowing_wetGrassTrue_sprinklerTrue)
+print("EXPLAINING AWAY")
+print("Probabilite de pluie sachant que le gazon est mouille > Probabilite de pluie sachant que le gazon est mouille et que l'arrosoir a ete active")
+print("                                    {0} > {1}\n".format(rainTrue_knowing_wetGrassTrue, rainTrue_knowing_wetGrassTrue_sprinklerTrue))

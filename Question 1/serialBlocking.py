@@ -34,12 +34,13 @@ cloudyTrue_wetGrassTrue = cloudyTrue_rainTrue_wetGrassTrue + cloudyTrue_rainFals
 
 cloudyTrue_knowing_wetGrassTrue = cloudyTrue_wetGrassTrue / wetGrassTrue
 
-print "Probabilite de nuages sachant que le gazon est mouille"
-print cloudyTrue_knowing_wetGrassTrue
+print("SERIAL BLOCKING")
+print("Probabilite de nuages sachant que le gazon est mouille")
+print(cloudyTrue_knowing_wetGrassTrue)
 
-print "Si on ne sait rien sur s'il pleut, savoir si le gazon est mouille donne de l'information sur s'il y a des nuages.\n"
+print("Si on ne sait rien sur s'il pleut, savoir si le gazon est mouille donne de l'information sur s'il y a des nuages.\n")
 
-print "Probabilite de nuages sachant qu'il pleut = Probabilite de nuages sachant qu'il pleut et que le gazon est mouille"
-print "                           {0} = {1}".format(cloudyTrue_knowing_rainTrue, cloudyTrue_knowing_rainTrue_wetGrassTrue)
+print("Probabilite de nuages sachant qu'il pleut = Probabilite de nuages sachant qu'il pleut et que le gazon est mouille")
+print("                       {0} = {1}".format(cloudyTrue_knowing_rainTrue, cloudyTrue_knowing_rainTrue_wetGrassTrue))
 
-print "Si l'on sait deja qu'il pleut, savoir que le gazon est mouille ne dit rien de plus sur s'il y a des nuages."
+print("Si l'on sait deja qu'il pleut, savoir que le gazon est mouille ne dit rien de plus sur s'il y a des nuages.\n")
