@@ -1,11 +1,11 @@
 import numpy as np
 
-import probabilitees
+import reseau
 
 def getCambriolageAndMarieAppelleAndJeanAppelle(cambriolage, marieAppelle, jeanAppelle):
-    cambriolage_alarmeTrue_marieAppelle_jeanAppelle = probabilitees.getJointProbability( cambriolage= cambriolage, tremblement= True, alarme= True, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle) + probabilitees.getJointProbability( cambriolage= cambriolage, tremblement= False, alarme= True, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle )
+    cambriolage_alarmeTrue_marieAppelle_jeanAppelle = reseau.getJointProbability( cambriolage= cambriolage, tremblement= True, alarme= True, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle) + reseau.getJointProbability( cambriolage= cambriolage, tremblement= False, alarme= True, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle )
 
-    cambriolage_alarmeFalse_marieAppelle_jeanAppelle = probabilitees.getJointProbability( cambriolage= cambriolage, tremblement= True, alarme= False, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle ) + probabilitees.getJointProbability( cambriolage= cambriolage, tremblement= False, alarme= False, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle )
+    cambriolage_alarmeFalse_marieAppelle_jeanAppelle = reseau.getJointProbability( cambriolage= cambriolage, tremblement= True, alarme= False, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle ) + reseau.getJointProbability( cambriolage= cambriolage, tremblement= False, alarme= False, marieAppelle= marieAppelle, jeanAppelle= jeanAppelle )
 
     return cambriolage_alarmeTrue_marieAppelle_jeanAppelle + cambriolage_alarmeFalse_marieAppelle_jeanAppelle
 

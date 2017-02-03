@@ -1,17 +1,17 @@
-import probabilitees
+import reseau
 
-print("P(C) = {}".format(probabilitees.cambriolageTrue))
+print("P(C) = {}".format(reseau.cambriolageTrue))
 
-print("P(T) = {}".format(probabilitees.tremblementTrue))
+print("P(T) = {}".format(reseau.tremblementTrue))
 
-alarmeTrue = probabilitees.cambriolageTrue * probabilitees.tremblementTrue * probabilitees.alarmeTrue[1][1] + probabilitees.cambriolageFalse * probabilitees.tremblementTrue * probabilitees.alarmeTrue[0][1] + probabilitees.cambriolageTrue * probabilitees.tremblementFalse * probabilitees.alarmeTrue[1][0] + probabilitees.cambriolageFalse * probabilitees.tremblementFalse * probabilitees.alarmeTrue[0][0]
+alarmeTrue = reseau.cambriolageTrue * reseau.tremblementTrue * reseau.alarmeTrue[1][1] + reseau.cambriolageFalse * reseau.tremblementTrue * reseau.alarmeTrue[0][1] + reseau.cambriolageTrue * reseau.tremblementFalse * reseau.alarmeTrue[1][0] + reseau.cambriolageFalse * reseau.tremblementFalse * reseau.alarmeTrue[0][0]
 
 print("P(A) = {}".format(alarmeTrue))
 
-marieAppelleTrue = alarmeTrue * probabilitees.marieAppelleTrue[1] + (1 - alarmeTrue) * probabilitees.marieAppelleTrue[0]
+marieAppelleTrue = alarmeTrue * reseau.marieAppelleTrue[1] + (1 - alarmeTrue) * reseau.marieAppelleTrue[0]
 
 print("P(M) = {}".format(marieAppelleTrue))
 
-jeanAppelleTrue = alarmeTrue * probabilitees.jeanAppelleTrue[1] + (1 - alarmeTrue) * probabilitees.jeanAppelleTrue[0]
+jeanAppelleTrue = alarmeTrue * reseau.jeanAppelleTrue[1] + (1 - alarmeTrue) * reseau.jeanAppelleTrue[0]
 
 print("P(J) = {}".format(jeanAppelleTrue))
